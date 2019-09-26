@@ -5,8 +5,9 @@ Prototipo do AppFood, app mobile para o segmento de Food, do pedido à entrega.
 ## Develop
 - Desenvolvimento: OptyDev Engenria de Software Inc 2019;
 - CEO: Carlos Roberto dos Santos Silva;
-- Inicio: 2019.
-  
+- CTI: Carlos Roberto dos Santos Silva'
+- Inicio: 2019 e Termino: 2020.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
