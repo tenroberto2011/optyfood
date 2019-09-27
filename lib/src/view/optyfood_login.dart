@@ -69,6 +69,9 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
             child: GoogleSignInButton(onPressed: () {}),
           ),
           Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20.0)
+            ),
             height: 46,
             child: GoogleSignInButton(onPressed: () {}, darkMode: true),
           ),
