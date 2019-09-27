@@ -31,7 +31,7 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
     );
 
   _body() {
-    return Container(
+    return Padding(
       padding: EdgeInsets.all(16),
       child: ListView(
         children: <Widget>[
@@ -44,11 +44,14 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
           ),
           SizedBox(height: 20,),
           Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.0)
+            ),
             height: 46,
             child: RaisedButton(
               color: Colors.blue,
               child: Text(
-                "Login",
+                "Login Padrão",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 22,
@@ -57,7 +60,11 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
               onPressed: () {},
             ),
           ),
+          SizedBox(height:20,),
           Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20.0)
+            ),
             height: 46,
             child: GoogleSignInButton(onPressed: () {}),
           ),
@@ -78,6 +85,9 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
             child: MicrosoftSignInButton(onPressed: () {}),
           ),
           Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.0)
+            ),
             height: 46,
             child: MicrosoftSignInButton(onPressed: () {}, darkMode: true),
           ),
