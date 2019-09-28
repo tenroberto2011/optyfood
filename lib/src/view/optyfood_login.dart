@@ -1,5 +1,6 @@
 
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mvc_application/mvc.dart' show ViewMVC;
 import 'package:flutter_auth_buttons/flutter_auth_buttons.dart';
@@ -61,39 +62,44 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
             ),
           ),
           SizedBox(height:20,),
+          // Usando decoration,borderRadius, boxShadow
           Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20.0)
-            ),
-            height: 46,
-            child: GoogleSignInButton(onPressed: () {}),
+             child: Container (
+              decoration: BoxDecoration(
+                color: Colors.red,
+                  borderRadius: BorderRadius.circular(10.0,),
+                  boxShadow: <BoxShadow> [
+                    BoxShadow(
+                      color: Colors.black45,
+                      offset: Offset(3.0, 5.0),
+                      blurRadius: 10
+                    ),
+                  ]
+                ),
+                height: 46,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget> [
+                    Icon(Icons.add_to_home_screen, color: Colors.white),
+                    SizedBox(width: 20,),
+                    Text('Toque aqui ...', style: TextStyle( color: Colors.white, fontSize: 22)),
+                  ],
+                ),
+              ),
           ),
-          Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20.0)
-            ),
-            height: 46,
-            child: GoogleSignInButton(onPressed: () {}, darkMode: true),
-          ),
-          Container(
-            height: 46,
-            child: FacebookSignInButton(onPressed: () {}),
-          ),
-          Container(
-            height: 46,
-            child: TwitterSignInButton(onPressed: () {}),
-          ),
-          Container(
-            height: 46,
-            child: MicrosoftSignInButton(onPressed: () {}),
-          ),
-          Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10.0)
-            ),
-            height: 46,
-            child: MicrosoftSignInButton(onPressed: () {}, darkMode: true),
-          ),
+          SizedBox(height:20,),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 1.0),
+            child: Column (
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                GoogleSignInButton(onPressed: () {}),
+                GoogleSignInButton(onPressed: () {}, darkMode: true),
+                FacebookSignInButton(onPressed: () {}),
+                MicrosoftSignInButton(onPressed: () {}),
+                MicrosoftSignInButton(onPressed: () {}, darkMode: true),
+            ],)
+          )
         ],
       ),
     );
