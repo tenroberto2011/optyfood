@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mvc_application/mvc.dart' show ViewMVC;
 import 'package:flutter_auth_buttons/flutter_auth_buttons.dart';
+import 'package:optyfood/src/view/button_text_iicon.dart';
 
 class OptyFoodLoginApp extends ViewMVC {
   OptyFoodLoginApp()
@@ -36,6 +37,7 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
       padding: EdgeInsets.all(16),
       child: ListView(
         children: <Widget>[
+          Image.asset("assets/images/img_kokan.jpg"),
           Text("Login"),
           TextFormField(),
           SizedBox(height: 10,),
@@ -63,31 +65,13 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
           ),
           SizedBox(height:20,),
           // Usando decoration,borderRadius, boxShadow
-          Container(
-             child: Container (
-              decoration: BoxDecoration(
-                color: Colors.red,
-                  borderRadius: BorderRadius.circular(10.0,),
-                  boxShadow: <BoxShadow> [
-                    BoxShadow(
-                      color: Colors.black45,
-                      offset: Offset(3.0, 5.0),
-                      blurRadius: 10
-                    ),
-                  ]
-                ),
-                height: 46,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget> [
-                    Icon(Icons.add_to_home_screen, color: Colors.white),
-                    SizedBox(width: 20,),
-                    Text('Toque aqui ...', style: TextStyle( color: Colors.white, fontSize: 22)),
-                  ],
-                ),
-              ),
+          ButtonTextIcon(
+            text: "Click aqui ",
+            iconData: Icons.add,
+            color: Colors.red
           ),
           SizedBox(height:20,),
+          // Butões para Sign em redes sociais
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 1.0),
             child: Column (
