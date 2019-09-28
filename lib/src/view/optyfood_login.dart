@@ -23,7 +23,6 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
   void initState() {
     super.initState();
   }
-
 @override
   Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
@@ -37,7 +36,8 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
       padding: EdgeInsets.all(16),
       child: ListView(
         children: <Widget>[
-          Image.asset("assets/images/img_kokan.jpg"),
+          Image.asset("assets/images/img_kokan_03.jpeg", fit: BoxFit.scaleDown),
+          SizedBox(height: 10,),
           Text("Login"),
           TextFormField(),
           SizedBox(height: 10,),
@@ -46,6 +46,7 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
             obscureText: true,
           ),
           SizedBox(height: 20,),
+          /*
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10.0)
@@ -63,15 +64,29 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
               onPressed: () {},
             ),
           ),
-          SizedBox(height:20,),
+          */
           // Usando decoration,borderRadius, boxShadow
+          SizedBox(height:20,),
           ButtonTextIcon(
-            text: "Click aqui ",
-            iconData: Icons.add,
+            text: "Login Padrão ",
+            iconData: Icons.apps,
+            color: Colors.black
+          ),
+          SizedBox(height:20,),
+          ButtonTextIcon(
+            text: "Login com o Google ",
+            iconData: Icons.alternate_email,
             color: Colors.red
           ),
           SizedBox(height:20,),
+          ButtonTextIcon(
+            text: "Login com Facebook ",
+            iconData: Icons.wifi,
+            color: Colors.blue
+          ),
+          SizedBox(height:20,),
           // Butões para Sign em redes sociais
+          /*
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 1.0),
             child: Column (
@@ -84,6 +99,7 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
                 MicrosoftSignInButton(onPressed: () {}, darkMode: true),
             ],)
           )
+          */
         ],
       ),
     );

@@ -53,6 +53,10 @@ flutter:
     - assets/images/img_cn.png
     - assets/images/img_global.png
     - assets/images/img_kokan.jpg
+    - assets/images/img_kokan_01.jpeg
+    - assets/images/img_kokan_02.jpeg
+    - assets/images/img_kokan_03.jpeg
+    - assets/images/img_kokan_fachada.jpg
 
   #  - images/a_dot_ham.jpeg
 
