@@ -15,14 +15,16 @@ class OptyComponets {
 
   Widget logo({double size = 100, Color color = Colors.red}){
     return Padding(
-      padding: const EdgeInsets.only(bottom: 70.0, top: 100.0),
-      child: Icon(Icons.adjust, size: size, color: color,),
+      padding: const EdgeInsets.only(bottom: 5.0, top: 5.0),
+      child: Image.asset("assets/images/img_kokan_03.jpeg", fit: BoxFit.cover),
+      ///Icon(Icons.adjust, size: size, color: color,),
     );
   }
 
   Widget inputNmUsuario(){
     return Padding(
-      padding: const EdgeInsets.only(right: 30.0 , left: 30.0 , bottom: 15),
+      padding: const EdgeInsets.all(5.0), //.only(right: 30.0 , left: 30.0 , bottom: 15),
+      //padding: const EdgeInsets.only(right: 30.0 , left: 30.0 , bottom: 15),
       child: TextField(
         decoration: InputDecoration (
           border: OutlineInputBorder(),
@@ -35,7 +37,7 @@ class OptyComponets {
 
   Widget inputSenha(){
     return Padding(
-      padding: const EdgeInsets.only(right: 30.0 , left: 30.0 , bottom: 15),
+      padding: const EdgeInsets.all(5.0), //EdgeInsets.only(right: 30.0 , left: 30.0 , bottom: 15),
       child: TextField(
         decoration: InputDecoration (
           border: OutlineInputBorder(),

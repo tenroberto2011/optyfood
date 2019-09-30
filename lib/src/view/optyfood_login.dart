@@ -10,6 +10,9 @@ class OptyFoodLoginApp extends ViewMVC {
   OptyFoodLoginApp()
     : super(
       title: 'OptyFood',
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+      ),
       home: OptyFoodLogin(),
       );
 }
@@ -28,6 +31,7 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> with OptyComponets {
   Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: Text("OptyFood"),
+        backgroundColor: Colors.red,
       ),
       body: _body(),
     );
@@ -36,10 +40,10 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> with OptyComponets {
     return Padding(
       padding: EdgeInsets.all(16),
       child: ListView(
-        image: AssetImage(image: AssetImage('assets/images/bg_kokan.jpeg')),
+        //image: AssetImage(image: AssetImage('assets/images/bg_kokan.jpeg')),
         children: <Widget>[
-          //Image.asset("assets/images/img_kokan_03.jpeg", fit: BoxFit.cover),
           //SizedBox(height: 10,),
+          logo(),
           inputNmUsuario(),
           inputSenha(),
           //Text("Login"),
