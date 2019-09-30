@@ -49,13 +49,14 @@ class OptyComponets {
   }
 
 
-  Widget btnSignInOpty({bool isLoading = false, 
+  Widget btnOptySignIn({bool isLoading = false, 
     double circular = 8.0, 
     double width = double.infinity, 
     double height = 50, 
     Function onTap, 
-    EdgeInsets padding = const EdgeInsets.only(right: 30.0, left: 30.0, top: 70, bottom: 70)}){
-
+    EdgeInsets padding = const EdgeInsets.all(10.0) }){
+      
+    //.only(right: 30.0, left: 30.0, top: 70, bottom: 70)
     _loading(){
       return Padding(
         padding: const EdgeInsets.all(8.0),
@@ -66,7 +67,7 @@ class OptyComponets {
     }
 
     _text(){
-      return Text("Sign In", textAlign: TextAlign.center, style: TextStyle(fontSize:18, color: Colors.white),);
+      return Text("Login Padrão", textAlign: TextAlign.center, style: TextStyle(fontSize:18, color: Colors.white),);
     }
 
     return InkWell(

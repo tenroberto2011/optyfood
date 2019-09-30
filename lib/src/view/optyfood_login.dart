@@ -47,6 +47,8 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> with OptyComponets {
           inputNmUsuario(),
           inputSenha(),
           textEsqueceuSenha(),
+          btnOptySignIn(),
+          btnOptySignIn(),
           //Text("Login"),
           //TextFormField(),
           //izedBox(height: 10,),
@@ -75,6 +77,8 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> with OptyComponets {
           ),
           */
           // Usando decoration,borderRadius, boxShadow
+          //
+          /*
           SizedBox(height:20,),
           ButtonTextIcon(
             text: "Login Padrão ",
@@ -94,6 +98,7 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> with OptyComponets {
             color: Colors.blue
           ),
           SizedBox(height:20,),
+          */
           // Butões para Sign em redes sociais
           /*
           Padding(
@@ -110,6 +115,7 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> with OptyComponets {
           )
           */
         ],
+        
       ),
     );
   }
