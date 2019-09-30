@@ -3,7 +3,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mvc_application/mvc.dart' show ViewMVC;
-import 'package:flutter_auth_buttons/flutter_auth_buttons.dart';
 import 'package:optyfood/src/view/button_text_iicon.dart';
 
 class OptyFoodLoginApp extends ViewMVC {
