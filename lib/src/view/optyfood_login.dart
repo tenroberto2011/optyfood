@@ -4,20 +4,22 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mvc_application/mvc.dart' show ViewMVC;
 import 'package:optyfood/src/view/button_text_iicon.dart';
+import 'package:optyfood/src/view/opty_components.dart';
 
 class OptyFoodLoginApp extends ViewMVC {
   OptyFoodLoginApp()
-      : super(
-            title: 'OptyFood',
-            home: OptyFoodLogin());
+    : super(
+      title: 'OptyFood',
+      home: OptyFoodLogin(),
+      );
 }
 
-class OptyFoodLogin extends StatefulWidget {
+class OptyFoodLogin extends StatefulWidget  {
   @override
   _OptyFoodLoginState createState() => _OptyFoodLoginState();
 }
 
-class _OptyFoodLoginState extends State<OptyFoodLogin> {
+class _OptyFoodLoginState extends State<OptyFoodLogin> with OptyComponets {
 @override
   void initState() {
     super.initState();
@@ -34,17 +36,20 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> {
     return Padding(
       padding: EdgeInsets.all(16),
       child: ListView(
+        image: AssetImage(image: AssetImage('assets/images/bg_kokan.jpeg')),
         children: <Widget>[
-          Image.asset("assets/images/img_kokan_03.jpeg", fit: BoxFit.scaleDown),
-          SizedBox(height: 10,),
-          Text("Login"),
-          TextFormField(),
-          SizedBox(height: 10,),
-          Text("Senha"),
-          TextFormField(
-            obscureText: true,
-          ),
-          SizedBox(height: 20,),
+          //Image.asset("assets/images/img_kokan_03.jpeg", fit: BoxFit.cover),
+          //SizedBox(height: 10,),
+          inputNmUsuario(),
+          inputSenha(),
+          //Text("Login"),
+          //TextFormField(),
+          //izedBox(height: 10,),
+          //Text("Senha"),
+          //TextFormField(
+          //  obscureText: true,
+          //),
+          //SizedBox(height: 20,),
           /*
           Container(
             decoration: BoxDecoration(
