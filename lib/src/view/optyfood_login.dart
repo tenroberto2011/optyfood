@@ -47,7 +47,7 @@ class _OptyFoodLoginState extends State<OptyFoodLogin> with OptyComponets {
           inputNmUsuario(),
           inputSenha(),
           textEsqueceuSenha(),
-          btnOptySignIn(),
+          btnOptySignIn(texto: Text("Login Padrão")),
           btnOptySignIn(),
           //Text("Login"),
           //TextFormField(),
